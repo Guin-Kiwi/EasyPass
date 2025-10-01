@@ -69,6 +69,8 @@ The application interacts with the user via the console. Users can:
 
 The application validates all user input to ensure data integrity and a smooth user experience. This is implemented in `main-invoice.py` as follows:
 
+When the user enters an account, the program checks if its a valid entry and if its not, an error occurs and the input is requested again.
+
 - **Menu selection:** When the user enters a pizza number, the program checks if the input is a digit and within the valid menu range:
 	```python
 	if not choice.isdigit() or not (1 <= int(choice) <= len(menu)):
