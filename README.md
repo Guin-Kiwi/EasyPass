@@ -15,30 +15,31 @@ This project is intended to:
 - Commit regularly to track your progress.
 
 # 🍕 TEMPLATE for documentation
-> 🚧 Please remove this paragraphs having "🚧". These are comments for preparing the documentations.
+
 ## 📝 Analysis
 
 **Problem**
 > 🚧 Describe the real-world problem your application solves. (Not HOW, but WHAT)
 
-💡 Example: In a small local pizzeria, the staff writes orders and calculates totals by hand. This causes mistakes and inconsistent orders or discounts.
+💡 Different websites require "strong" passwords, which are hard to generate and difficult to remember, users need an easy and quick solution for password generation and storage.
 
 **Scenario**
 > 🚧 Describe when and how a user will use your application
 
-💡 Example: PizzaRP solves the part of the problem where orders and totals are created by letting a user select items from a menu and automatically generating a correct invoice.
+💡 When users want to register or signup on a new platform requiring a complicated password (e.g. numbers, special characters, Capitals, etc) they can use the application to generate one that works, and store it for later.
 
 **User stories:**
-1. As a user, I want to see the pizza menu in the console.
-2. As a user, I want to select pizzas and see the running total.
-3. As a user, I want discounts to be applied automatically.
-4. As a user, I want an invoice to be created and saved as a file.
+1. As a user, I want my password to be legitimate.
+2. As a user, I want to store my generated passwords.
+3. As a user, I want to simplify the password generation process.
+4. As a user, I want the generated password to be unique.
 
 **Use cases:**
-- Show Menu (from `menu.txt`)
-- Create Order (choose pizzas)
-- Show Current Order and Total
-- Print Invoice (to `invoice_xxx.txt`)
+- User Login (choose user)
+- Generate or check a new password before storage
+- Store password/s from accounts in (user_passwords.csv)
+- Remove password/s from accounts in (user_passwords.csv)
+- Show passwords (user specific)
 
 ---
 
@@ -57,10 +58,9 @@ Each app must meet the following three criteria in order to be accepted (see als
 > 🚧 In this section, document how your project fulfills each criterion.  
 ---
 The application interacts with the user via the console. Users can:
-- View the pizza menu
-- Select pizzas and quantities
-- See the running total
-- Receive an invoice generated as a file
+- Define password requirements, check or Generate password
+- Manage User Specific account passwords
+- Regenrate a new password, Copy the password
 
 ---
 
