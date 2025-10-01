@@ -167,9 +167,9 @@ These libraries are part of the Python standard library, so no external installa
 
 | Name       | Contribution                                 |
 |------------|----------------------------------------------|
-| Student A  | Menu reading (file input) and displaying menu|
-| Student B  | Order logic and data validation              |
-| Student C  | Invoice generation (file output) and slides  |
+| Student A  |                                              |
+| Student B  |                                              |
+| Student C  |                                              |
 
 
 ## 🤝 Contributing
