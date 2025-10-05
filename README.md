@@ -74,6 +74,9 @@ The application validates all user input to ensure data integrity and a smooth u
 
 When the user chooses a difficulty of the generated password, the program checks if the entered password corresponds to the requirements and if its not, an error occurs and the input is requested again.
 
+- **User Login Check** When the user enters a login name, the program checks for a .txt file with their username, if there is no file the system creates an error that there is no account with that name and prompts them to create a new login
+	```
+
 - **Password check:** When the user enters a password, the program checks if the input corresponds to the chosen requirements level:
 	```python
 	
