@@ -78,7 +78,7 @@ When the user chooses a difficulty of the generated password, the program checks
 	```python
 	
 	```
-	This ensures only valid menu items can be ordered.
+	This ensures only valid password generation.
 
 - **Menu file validation:** When reading the menu file, the program checks for valid price values and skips invalid lines:
 	```python
