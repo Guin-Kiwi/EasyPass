@@ -107,9 +107,8 @@ If 2 or 3 are met -> medium password
 If more than 3 are met -> strong password
 
 
+`space for code`
 	
-	``` space for code
-		```
 
 
 
