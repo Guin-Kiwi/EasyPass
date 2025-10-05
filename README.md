@@ -89,10 +89,15 @@ When the user chooses a difficulty of the generated password, the program checks
 - Requirements:
 
 At least one lowercase letter
+
 At least one uppercase letter
+
 At least one special character
-The password must not contain spaces (a client ICT system restriction).
-The password must be at least 8 characters long.
+
+The password must not contain spaces 
+
+The password must be at least 8 characters long
+
 If the password is invalid, display a bullet-point report showing what needs to be changed.
 
 	else:
