@@ -98,7 +98,8 @@ When the user chooses a difficulty of the generated password, the program checks
 	```
 
 - **Password strength requirements:** Depending on how many of the requirements the password is fulfilling, we deem it weak, medium or strong.
-- Requirements:
+  
+  Requirements:
 
 At least one lowercase letter
 
@@ -109,6 +110,7 @@ At least one special character
 The password must not contain spaces 
 
 The password must be at least 8 characters long
+
 
 If 1 requirement is met -> weak password
 
