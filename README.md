@@ -104,6 +104,7 @@ When the user chooses a difficulty of the generated password, the program checks
 - The password must be at least 8 characters long
 
 **Criteria**
+
 If 1 requirement is met -> weak password
 
 If 2 or 3 are met -> medium password
