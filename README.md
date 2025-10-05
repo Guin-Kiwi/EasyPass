@@ -98,7 +98,10 @@ The password must not contain spaces
 
 The password must be at least 8 characters long
 
-If the password is invalid, display a bullet-point report showing what needs to be changed.
+If 1 requirement is met -> weak password
+If 2 or 3 are met -> medium password
+If more than 3 are met -> strong password
+
 
 	else:
 			print("⚠️ Invalid choice.")
