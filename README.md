@@ -61,9 +61,16 @@ Each app must meet the following three criteria in order to be accepted (see als
 > 🚧 In this section, document how your project fulfills each criterion.  
 ---
 The application interacts with the user via the console. Users can:
-- Define password requirements, check or Generate password
+
+- Login to their account
+- Generate a password
+ 		- Define password requirements
+- Check a password
+ 		- Judge password strength
 - Manage User Specific account passwords
-- Regenerate a new password, Copy the password
+ 		- Check passwords
+ 		- Change passwords
+  		- Generate a new password
 
 ---
 
