@@ -80,12 +80,9 @@ When the user chooses a difficulty of the generated password, the program checks
 	```
 	This ensures only valid password generation.
 
-- **Menu file validation:** When reading the menu file, the program checks for valid price values and skips invalid lines:
+- **Account check:** When entering an account credentials the program checks if the account (including password) already exists, and if so suggests an update of the password: 
 	```python
-	try:
-			menu.append({"name": name, "size": size, "price": float(price)})
-	except ValueError:
-			print(f"⚠️ Skipping invalid line: {line.strip()}")
+	
 	```
 
 - **Main menu options:** The main menu checks for valid options and handles invalid choices gracefully:
