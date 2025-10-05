@@ -88,15 +88,17 @@ When the user chooses a difficulty of the generated password, the program checks
 	```python
 	
 	```
+- **Password validation** The password must meet all the requirements in order to be valid as a password
+1. minimum 4 characters
+2. contain no spaces
 
 - **Password strength requirements:** Depending on how many of the requirements the password is fulfilling, we deem it weak, medium or strong.
   
   Requirements:
 1. At least one lowercase letter
 2. At least one uppercase letter
-3. At least one special character
-4. The password must not contain spaces 
-5. The password must be at least 8 characters long
+3. At least one special character 
+4. The password must be at least 8 characters long
 
 **Criteria**
 
@@ -104,7 +106,7 @@ If 1 requirement is met -> weak password
 
 If 2 or 3 are met -> medium password
 
-If more than 3 are met -> strong password
+If all 4 are met -> strong password
 
 
 `space for code`
