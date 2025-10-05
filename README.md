@@ -93,17 +93,17 @@ When the user chooses a difficulty of the generated password, the program checks
   
   Requirements:
 
-At least one lowercase letter
+- At least one lowercase letter
 
-At least one uppercase letter
+- At least one uppercase letter
 
-At least one special character
+- At least one special character
 
-The password must not contain spaces 
+- The password must not contain spaces 
 
-The password must be at least 8 characters long
+- The password must be at least 8 characters long
 
-
+**Criteria**
 If 1 requirement is met -> weak password
 
 If 2 or 3 are met -> medium password
@@ -112,13 +112,10 @@ If more than 3 are met -> strong password
 
 
 	
-	```
+	``` space for code
+		```
 
-These checks prevent crashes and guide the user to provide correct input, matching the validation requirements described in the project guidelines.
 
----
-
----
 
 
 ### 3. File Processing
