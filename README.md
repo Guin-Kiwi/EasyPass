@@ -21,12 +21,15 @@ This project is intended to:
 **Problem**
 > 🚧 Describe the real-world problem your application solves. (Not HOW, but WHAT)
 
-💡 Different websites require "strong" passwords, which are hard to generate and difficult to remember, users need an easy and quick solution for password generation and storage.
+💡 Different websites require "strong" passwords, which are hard to generate and difficult to remember, 
+users need an easy and quick solution for password generation and storage.
 
 **Scenario**
 > 🚧 Describe when and how a user will use your application
 
-💡 When users want to register or signup on a new platform requiring a complicated password (e.g. numbers, special characters, Capitals, etc) they can use the application to generate one that works, and store it for later.
+💡 When users want to register or signup on a new platform requiring a complicated password 
+(e.g. numbers, special characters, Capitals, etc) they can use the application to generate one that works, 
+and store it for later.
 
 **User stories:**
 1. As a user, I want my password to be legitimate.
@@ -102,33 +105,16 @@ These checks prevent crashes and guide the user to provide correct input, matchi
 
 ### 3. File Processing
 
-The application reads and writes data using files:
+The application writes and reads data using files:
 
-- **Input file:** `menu.txt` — Contains the pizza menu, one item per line in the format `PizzaName;Size;Price`.
-	- Example:
+- **Input and Output file:** `user_name.txt` — Contains the accounts and associated passwords for the user
 		```
-		Margherita;Medium;12.50
-		Salami;Large;15.00
-		Funghi;Small;9.00
-		```
-	- The application reads this file at startup to display available pizzas.
-
-- **Output file:** `invoice_001.txt` (and similar) — Generated when an order is completed. Contains a summary of the order, including items, quantities, prices, discounts, and totals.
-	- Example:
-		```
-		Invoice #001
-		----------------------
-		1x Margherita (Medium)   12.50
-
-
-		2x Salami (Large)        30.00
-		----------------------
-		Total:                  42.50
-		Discount:                2.50
-		Amount Due:             40.00
-		```
-		- The output file serves as a record for both the user and the pizzeria, ensuring accuracy and transparency.
-
+		Google;strong;g7!R#x9VqP4sL@m2bZk8
+  		Reddit;medium;Blue-Planet-78
+  		Cara;weak;summer2024
+		
+		- The output file serves as a record for the user.
+  
 ## ⚙️ Implementation
 
 ### Technology
@@ -140,8 +126,7 @@ The application reads and writes data using files:
 ```text
 PizzaRP/
 ├── main.py             # main program logic (console application)
-├── menu.txt            # pizza menu (input data file)
-├── invoice_001.txt     # example of a generated invoice (output file)
+├── user_name.txt       # User password management info (input and output data file)
 ├── docs/               # optional screenshots or project documentation
 └── README.md           # project description and milestones
 ```
