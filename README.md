@@ -63,22 +63,20 @@ Each app must meet the following three criteria in order to be accepted (see als
 The application interacts with the user via the console. Users can:
 - Define password requirements, check or Generate password
 - Manage User Specific account passwords
-- Regenrate a new password, Copy the password
+- Regenerate a new password, Copy the password
 
 ---
 
 
 ### 2. Data Validation
 
-The application validates all user input to ensure data integrity and a smooth user experience. This is implemented in `main-invoice.py` as follows:
+The application validates all user input to ensure data integrity and a smooth user experience. 
 
-When the user enters an account, the program checks if its a valid entry and if its not, an error occurs and the input is requested again.
+When the user chooses a difficulty of the generated password, the program checks if the entered password corresponds to the requirements and if its not, an error occurs and the input is requested again.
 
-- **Menu selection:** When the user enters a pizza number, the program checks if the input is a digit and within the valid menu range:
+- **Password check:** When the user enters a password, the program checks if the input corresponds to the chosen requirements level:
 	```python
-	if not choice.isdigit() or not (1 <= int(choice) <= len(menu)):
-			print("⚠️ Invalid choice.")
-			continue
+	
 	```
 	This ensures only valid menu items can be ordered.
 
