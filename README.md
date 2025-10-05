@@ -85,8 +85,16 @@ When the user chooses a difficulty of the generated password, the program checks
 	
 	```
 
-- **Main menu options:** The main menu checks for valid options and handles invalid choices gracefully:
-	```python
+- **Password strength requirements:** Depending on how many of the requirements the password is fulfilling, we deem it weak, medium or strong.
+- Requirements:
+
+At least one lowercase letter
+At least one uppercase letter
+At least one special character
+The password must not contain spaces (a client ICT system restriction).
+The password must be at least 8 characters long.
+If the password is invalid, display a bullet-point report showing what needs to be changed.
+
 	else:
 			print("⚠️ Invalid choice.")
 	```
