@@ -1,7 +1,4 @@
-# 🍕 PizzaRP – Pizzeria Reference Project (Console)
-
-> 🚧 This is a template repository for student project in the course Programming Foundations at FHNW, BSc BIT.  
-> 🚧 Do not keep this section in your final submission.
+# Password Generator and Checker Reference Project (Console)
 
 This project is intended to:
 
@@ -14,20 +11,16 @@ This project is intended to:
 - Work only within your own copy — do not push to the original template.  
 - Commit regularly to track your progress.
 
-# 🍕 TEMPLATE for documentation
-
 ## 📝 Analysis
 
 **Problem**
-> 🚧 Describe the real-world problem your application solves. (Not HOW, but WHAT)
 
-💡 Different websites require "strong" passwords, which are hard to generate and difficult to remember, 
+Different websites require "strong" passwords, which are hard to generate and difficult to remember, 
 users need an easy and quick solution for password generation and storage.
 
 **Scenario**
-> 🚧 Describe when and how a user will use your application
 
-💡 When users want to register or signup on a new platform requiring a complicated password 
+When users want to register or signup on a new platform requiring a complicated password 
 (e.g. numbers, special characters, Capitals, etc) they can use the application to generate one that works, 
 and store it for later.
 
@@ -57,8 +50,7 @@ Each app must meet the following three criteria in order to be accepted (see als
 ---
 
 ### 1. Interactive App (Console Input)
-
-> 🚧 In this section, document how your project fulfills each criterion.  
+ 
 ---
 The application interacts with the user via the console. Users can:
 
@@ -158,7 +150,7 @@ PizzaRP/
 ```
 
 ### How to Run
-> 🚧 Adjust if needed.
+
 1. Open the repository in **GitHub Codespaces**
 2. Open the **Terminal**
 3. Run:
@@ -176,13 +168,12 @@ These libraries are part of the Python standard library, so no external installa
 
 ## 👥 Team & Contributions
 
-> 🚧 Fill in the names of all team members and describe their individual contributions below. Each student should be responsible for at least one part of the project.
 
-| Name       | Contribution                                 |
-|------------|----------------------------------------------|
-| Student A  |                                              |
-| Student B  |                                              |
-| Student C  |                                              |
+| Name                  | Contribution                                 |
+|-----------------------|----------------------------------------------|
+| Marta Greschuk        |                                              |
+| Polina Yemelianenkova |                                              |
+| Ayla Allen            |                                              |
 
 
 ## 🤝 Contributing
