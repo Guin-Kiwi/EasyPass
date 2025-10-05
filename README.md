@@ -33,8 +33,8 @@ and store it for later.
 **Use cases:**
 - User Login (choose user)
 - Generate or check a new password before storage
-- Store password/s from accounts in (user_passwords.csv)
-- Remove password/s from accounts in (user_passwords.csv)
+- Store password/s from accounts in (user_name.txt)
+- Remove password/s from accounts in (user_name.txt)
 - Show passwords (user specific)
 
 ---
