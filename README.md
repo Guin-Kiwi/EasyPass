@@ -63,6 +63,7 @@ Each app must meet the following three criteria in order to be accepted (see als
 The application interacts with the user via the console. Users can:
 
 - Login to their account
+ 		- create or delete
 - Generate a password
  		- Define password requirements
 - Check a password
@@ -71,6 +72,7 @@ The application interacts with the user via the console. Users can:
  		- Check passwords
  		- Change passwords
   		- Generate a new password
+  		- Delete a password
 
 ---
 
