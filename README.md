@@ -105,8 +105,7 @@ If 2 or 3 are met -> medium password
 If more than 3 are met -> strong password
 
 
-	else:
-			print("⚠️ Invalid choice.")
+	
 	```
 
 These checks prevent crashes and guide the user to provide correct input, matching the validation requirements described in the project guidelines.
