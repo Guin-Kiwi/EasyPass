@@ -55,21 +55,22 @@ Each app must meet the following three criteria in order to be accepted (see als
 ---
 The application interacts with the user via the console. Users can perform the following steps:
 
-- User Login
-* with each username a file is created with the purpose of saving passwords
-* it can be either saved or deleted by the user
+1. User Login
+   1. with each username a file is created with the purpose of saving passwords 1
+   2. it can be either saved or deleted by the user 2
 
-- Check a password
-* Judge password strength
+2. Check a password
+	1. Judge password strength 1
+   
 
-- Generate a password
-* Define password requirements
+3. Generate a password
+	1. Define password requirements 1
 
-- Manage User Specific account passwords
-* Save a password for a platform account
-* View passwords for different platform accounts
-* Update passwords for platform accounts
-* Delete a platform account password entry
+4. Manage User Specific account passwords
+	1. Save a password for a platform account 1
+	2. View passwords for different platform accounts 2
+	3. Update passwords for platform accounts 3
+	4. Delete a platform account password entry 4
 
 ---
 
