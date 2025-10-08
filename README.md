@@ -53,7 +53,7 @@ Each app must meet the following three criteria in order to be accepted (see als
 ### 1. Interactive App (Console Input)
  
 ---
-The application interacts with the user via the console. Users can:
+The application interacts with the user via the console. Users can perform the following steps:
 
 - User Login
   
