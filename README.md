@@ -84,22 +84,19 @@ When the user chooses a difficulty of the generated password, the program checks
 - **User Login Check**
 
 When the user enters a login name, the program checks for a .txt file with their username, if there is no file the system creates an error that there is no account with that name and prompts them to create a new login
-	```
+	`space for code`
 
 - **Password check:**
 
 When the user enters a password, the program checks if the input corresponds to the chosen requirements level:
-	```python
-	
-	```
+	`space for code`
 	This ensures only valid password generation.
 
 - **Account check:**
 
 When entering an account credentials the program checks if the account (including password) already exists, and if so suggests an update of the password: 
-	```python
+	`space for code`
 	
-	```
 - **Password validation**
 
 The password must meet all the requirements in order to be valid as a password
