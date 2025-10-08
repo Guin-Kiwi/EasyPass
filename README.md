@@ -92,6 +92,7 @@ The password must meet all the requirements in order to be valid as a password
 1. minimum 4 characters
 2. contain no spaces
 
+
 	`space for code`
 
 
