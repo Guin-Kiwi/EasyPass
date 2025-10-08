@@ -21,7 +21,7 @@ When loging in to a platform, user enters their username and is required to prov
 - invent a password of their own that meets the basic requirements and our program will inform them how strong their password is.
 - use EasyPass, our quick and effective password generator, which also gives the option of choosing the password's strength.
 
-Now that the password issue is solved, the user will have the option to save their chosen password. Whenever they forget, they can look it up!
+Now that that inventing the password is no longer the problem, the user will have the option to save their chosen password. Whenever they forget, they can look it up!
 
 
 ### User stories:
