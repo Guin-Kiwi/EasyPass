@@ -14,15 +14,15 @@ This project is intended to:
 ## 📝 Analysis
 
 **Problem**
-
-Different websites require "strong" passwords, which are hard to generate and difficult to remember, 
-users need an easy and quick solution for password generation and storage.
+As a user, it is difficult to come up with new passwords regularly. It's also hard to determine if their passwords are good enough to protect their valuable information. It happens often that the users forget their platform passwords. Those problems create an unnecessary mental load and cause frustration. 
 
 **Scenario**
+When loging in to a platform, user enters their username and is required to provide a password, strong enough to be accepted by the platform. They are provided with two options: 
+- invent a password of their own that meets the basic requirements and our program will inform them how strong their password is.
+- use EasyPass, our quick and effective password generator, which also gives the option of choosing the password's strength.
 
-When users want to register or signup on a new platform requiring a complicated password 
-(e.g. numbers, special characters, Capitals, etc) they can use the application to generate one that works, 
-and store it for later.
+Now that the password issue is solved, the user will have the option to save their chosen password. Whenever they forget, they can look it up!
+
 
 **User stories:**
 1. As a user, I want my password to be accepted by the platform quickly.
