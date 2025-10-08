@@ -56,15 +56,16 @@ Each app must meet the following three criteria in order to be accepted (see als
 The application interacts with the user via the console. Users can:
 
 - User Login
- 		- create or delete user files
-- Generate a password
- 		- Define password requirements
+ 		- with each username a file is created with the purpose of saving passwords
+		- it can be either saved or deleted by the user
 - Check a password
  		- Judge password strength
+- Generate a password 
+ 		- Define password requirements
 - Manage User Specific account passwords
- 		- Check passwords platform accounts
- 		- Change passwords for platform accounts
-  		- Generate a new password for a platform account
+  		- Save a password for a platform account
+  		- View passwords for different platform accounts
+  		- Update passwords for platform accounts
   		- Delete a platform account password entry
 
 ---
