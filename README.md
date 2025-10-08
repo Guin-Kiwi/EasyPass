@@ -25,17 +25,17 @@ When users want to register or signup on a new platform requiring a complicated 
 and store it for later.
 
 **User stories:**
-1. As a user, I want my password to be legitimate.
-2. As a user, I want to store my generated passwords.
+1. As a user, I want my password to be accepted by the platform quickly.
+2. As a user, I want to store my passwords.
 3. As a user, I want to simplify the password generation process.
 4. As a user, I want the generated password to be unique.
 
 **Use cases:**
 - User Login (choose user)
-- Generate or check a new password before storage
-- Store password/s from accounts in (user_name.txt)
-- Remove password/s from accounts in (user_name.txt)
-- Show passwords (user specific)
+- Generate or check validity of a new password before storage
+- Store password/s from platform accounts in (user_name.txt)
+- Remove password/s from platform accounts in (user_name.txt)
+- Show passwords from platform accounts in (user_name.txt)
 
 ---
 
@@ -54,17 +54,17 @@ Each app must meet the following three criteria in order to be accepted (see als
 ---
 The application interacts with the user via the console. Users can:
 
-- Login to their account
- 		- create or delete
+- User Login
+ 		- create or delete user files
 - Generate a password
  		- Define password requirements
 - Check a password
  		- Judge password strength
 - Manage User Specific account passwords
- 		- Check passwords
- 		- Change passwords
-  		- Generate a new password
-  		- Delete a password
+ 		- Check passwords platform accounts
+ 		- Change passwords for platform accounts
+  		- Generate a new password for a platform account
+  		- Delete a platform account password entry
 
 ---
 
