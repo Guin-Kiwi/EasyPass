@@ -32,7 +32,7 @@ Now that that inventing the password is no longer the problem, the user will hav
 
 
 ### Use cases:
-- User Login (choose user)
+- User Login (gain access to the EasyPass user specific file)
 - Generate or check validity of a new password before storage
 - Store password/s from platform accounts in (user_name.txt)
 - Remove password/s from platform accounts in (user_name.txt)
