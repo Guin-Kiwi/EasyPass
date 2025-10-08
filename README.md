@@ -30,7 +30,7 @@ Now that the password issue is solved, the user will have the option to save the
 3. As a user, I want to simplify the password generation process.
 4. As a user, I want the generated password to be unique.
 
-**Use cases:**
+### Use cases:
 - User Login (choose user)
 - Generate or check validity of a new password before storage
 - Store password/s from platform accounts in (user_name.txt)
