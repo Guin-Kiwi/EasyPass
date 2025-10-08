@@ -122,9 +122,9 @@ The application writes and reads data using files:
 
 - **Input and Output file:** `user_name.txt` — Contains the accounts and associated passwords for the user
 		```
-		Google;strong;g7!R#x9VqP4sL@m2bZk8
-  		Reddit;medium;Blue-Planet-78
-  		Cara;weak;summer2024
+	- Google;strong;g7!R#x9VqP4sL@m2bZk8
+  	- Reddit;medium;Blue-Planet-78
+  	- Cara;weak;summer2024
 		
 		- The output file serves as a record for the user.
   
@@ -156,7 +156,7 @@ PizzaRP/
 ### Libraries Used
 
 - `os`: Used for file and path operations, such as checking if the menu file exists and creating new files.
-- `glob`: Used to find all invoice files matching a pattern (e.g., `invoice_*.txt`) to determine the next invoice number.
+- `glob`: Used to find all invoice files matching a pattern (e.g., `user_name.txt`) to determine the next invoice number.
 
 These libraries are part of the Python standard library, so no external installation is required. They were chosen for their simplicity and effectiveness in handling file management tasks in a console application.
 
