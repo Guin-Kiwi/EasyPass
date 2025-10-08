@@ -79,14 +79,14 @@ The application interacts with the user via the console. Users can perform the f
 
 The application validates all user input to ensure data integrity and a smooth user experience. 
 
-# User Login Check
+### User Login Check
 
 When the user enters a login name, the program checks for a .txt file with their username. If there is no file, the system informes the user and prompts them to create a new login.
 
 
 	`space for code`
 
-# Password validation:
+### Password validation:
 The program checks if the entered password corresponds to the requirements and if its not, an error occurs and the input is requested again.
 The password must meet all the requirements in order to be valid as a password
 1. minimum 4 characters
@@ -95,7 +95,7 @@ The password must meet all the requirements in order to be valid as a password
 	`space for code`
 
 
-# Password strength requirements: 
+### Password strength requirements: 
 
 Depending on how many of the requirements the password is fulfilling, we deem it weak, medium or strong.
   
