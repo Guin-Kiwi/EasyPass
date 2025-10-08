@@ -17,7 +17,7 @@ This project is intended to:
 As a user, it is difficult to come up with new passwords regularly. It's also hard to determine if their passwords are good enough to protect their valuable information. It happens often that the users forget their platform passwords. Those problems create an unnecessary mental load and cause frustration. 
 
 ### Scenario
-When loging in to a platform, user enters their username and is required to provide a password, strong enough to be accepted by the platform. They are provided with two options: 
+When loging in to a platform, users enter their username and are required to provide a password, strong enough to be accepted by the platform. With EasyPass they are provided with two options: 
 - invent a password of their own that meets the basic requirements and our program will inform them how strong their password is.
 - use EasyPass, our quick and effective password generator, which also gives the option of choosing the password's strength.
 
@@ -25,10 +25,11 @@ Now that that inventing the password is no longer the problem, the user will hav
 
 
 ### User stories:
-1. As a user, I want my password to be accepted by the platform quickly.
-2. As a user, I want to store my passwords.
-3. As a user, I want to simplify the password generation process.
-4. As a user, I want the generated password to be unique.
+1. As a user, I want to check my password strength or to generate a password at a certain strength so that my password is accepted by the platform
+2. As a user, I want my password to be accepted by the platform quickly to reduce time spent creating a platform account
+3. As a user, I want to store my passwords, so that I don't have to remember them
+5. As a user, I want the generated password to be unique, so that if one platform password is hacked somehow my other platform accounts are safe
+
 
 ### Use cases:
 - User Login (choose user)
