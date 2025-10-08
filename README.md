@@ -79,34 +79,25 @@ The application interacts with the user via the console. Users can perform the f
 
 The application validates all user input to ensure data integrity and a smooth user experience. 
 
-When the user chooses a difficulty of the generated password, the program checks if the entered password corresponds to the requirements and if its not, an error occurs and the input is requested again.
+# User Login Check
 
-- **User Login Check**
-
-When the user enters a login name, the program checks for a .txt file with their username, if there is no file the system creates an error that there is no account with that name and prompts them to create a new login
+When the user enters a login name, the program checks for a .txt file with their username. If there is no file, the system informes the user and prompts them to create a new login.
 
 
 	`space for code`
 
-- **Password check:**
-
-When the user enters a password, the program checks if the input corresponds to the chosen requirements level. This ensures only valid password generation.
-
-	`space for code`
-	
-- **Account check:**
-
-When entering an account credentials the program checks if the account (including password) already exists, and if so suggests an update of the password: 
-	
-	`space for code`
-	
-- **Password validation**
-
+# Password validation:
+The program checks if the entered password corresponds to the requirements and if its not, an error occurs and the input is requested again.
 The password must meet all the requirements in order to be valid as a password
 1. minimum 4 characters
 2. contain no spaces
 
-- **Password strength requirements:** Depending on how many of the requirements the password is fulfilling, we deem it weak, medium or strong.
+	`space for code`
+
+
+# Password strength requirements: 
+
+Depending on how many of the requirements the password is fulfilling, we deem it weak, medium or strong.
   
   Requirements:
 1. At least one lowercase letter
@@ -121,8 +112,13 @@ If 1 requirement is met -> weak password
 If 2 or 3 are met -> medium password
 
 If all 4 are met -> strong password
+
+
+	`space for code`
 	
 
+
+	
 
 
 
