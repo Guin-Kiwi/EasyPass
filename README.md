@@ -1,4 +1,4 @@
-# Password Generator and Checker Reference Project (Console)
+# EasyPass - Password Generator and Checker Reference Project (Console)
 
 This project is intended to:
 
