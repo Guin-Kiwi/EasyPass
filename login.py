@@ -1,5 +1,1 @@
-Margherita;Medium;12.50
-Salami;Large;15.00
-Funghi;Small;9.00
-Hawaii;Medium;14.00
-Diavola;Large;17.50
+Login_selection = input("Welcome to EasyPass" \n "1. Login" \n "2. Create new User" \n "Please enter a number: ")
