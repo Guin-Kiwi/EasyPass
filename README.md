@@ -17,16 +17,10 @@ This project is intended to:
 As a user, it is difficult to come up with new passwords regularly. It's also hard to determine if their passwords are good enough to protect their valuable information. It happens often that the users forget their platform passwords. Those problems create an unnecessary mental load and cause frustration. 
 
 ### Scenario
+Generate and store a password for a new account in a secure way.
 
-When loging in to a platform, users can access their login and password information from our EasyPass platform. The platofrm requires a simple identification 
-
-enter their username and are required to provide a password, strong enough to be accepted by the platform. With EasyPass they are provided with two options: 
-- invent a password of their own that meets the basic requirements and our program will inform them how strong their password is.
-- use EasyPass, our quick and effective password generator, which also gives the option of choosing the password's strength.
-
-Now that that inventing the password is no longer the problem, the user will have the option to save their chosen password in a file created by our program, which they can download. Whenever they forget, they can look it up!
-
-EasyPass provides also the option of deleting the passwords.
+input - account
+output - file
 
 ### User stories: stakeholder (for whom?), functionality (what do they want?), benefit (why is it useful?)
 
@@ -34,12 +28,12 @@ EasyPass provides also the option of deleting the passwords.
 	2. As a user, I want to be able to read my passwords and store them in one file so that I don't have to remember them at all times. 
 	3. As a user, I want to update my passwords so that they stay secure and I minimize the risks of hacking. 
 	4. As a user, I want to be able to delete my passwords when I no longer need them.
-
+	5. As a user, I want my password secret so that no body else can access it. -> libraries
 
 ### Use cases: 
-- User Login (gain access to the EasyPass user specific file)
+- Enter Login (gain access to the EasyPass user specific file)
 - Generate or check validity of a new password before storage
-- Store password/s from platform accounts in (user_name.txt)
+- Save password/s from platform accounts in (user_name.txt)
 - Remove password/s from platform accounts in (user_name.txt)
 - Show passwords from platform accounts in (user_name.txt)
 
@@ -84,10 +78,9 @@ The application interacts with the user via the console. Users can perform the f
 
 The application validates all user input to ensure data integrity and a smooth user experience. 
 
-### User Login Check
+### Account Check
 
-When the user enters a login name, the program checks for a .txt file with their username. If there is no file, the system informes the user and prompts them to create a new login.
-
+When the user enters a login name, the program checks for a .txt file with their username. If the account doesn't exist yet, the program will offer to generate a new password.
 
 	`space for code`
 
