@@ -24,7 +24,7 @@ When loging in to a platform, users enter their username and are required to pro
 Now that that inventing the password is no longer the problem, the user will have the option to save their chosen password. Whenever they forget, they can look it up!
 
 
-### User stories:
+### User stories: stakeholder, functionality, benefit
 1. As a user, I want to check my password strength or to generate a password at a certain strength so that my password is accepted by the platform
 2. As a user, I want my password to be accepted by the platform quickly to reduce time spent creating a platform account
 3. As a user, I want to store my passwords, so that I don't have to remember them
