@@ -17,12 +17,16 @@ This project is intended to:
 As a user, it is difficult to come up with new passwords regularly. It's also hard to determine if their passwords are good enough to protect their valuable information. It happens often that the users forget their platform passwords. Those problems create an unnecessary mental load and cause frustration. 
 
 ### Scenario
-When loging in to a platform, users enter their username and are required to provide a password, strong enough to be accepted by the platform. With EasyPass they are provided with two options: 
+
+When loging in to a platform, users can access their login and password information from our EasyPass platform. The platofrm requires a simple identification 
+
+enter their username and are required to provide a password, strong enough to be accepted by the platform. With EasyPass they are provided with two options: 
 - invent a password of their own that meets the basic requirements and our program will inform them how strong their password is.
 - use EasyPass, our quick and effective password generator, which also gives the option of choosing the password's strength.
 
 Now that that inventing the password is no longer the problem, the user will have the option to save their chosen password in a file created by our program, which they can download. Whenever they forget, they can look it up!
 
+EasyPass provides also the option of deleting the passwords.
 
 ### User stories: stakeholder (for whom?), functionality (what do they want?), benefit (why is it useful?)
 
