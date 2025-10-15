@@ -21,17 +21,18 @@ When loging in to a platform, users enter their username and are required to pro
 - invent a password of their own that meets the basic requirements and our program will inform them how strong their password is.
 - use EasyPass, our quick and effective password generator, which also gives the option of choosing the password's strength.
 
-Now that that inventing the password is no longer the problem, the user will have the option to save their chosen password. Whenever they forget, they can look it up!
+Now that that inventing the password is no longer the problem, the user will have the option to save their chosen password in a file created by our program, which they can download. Whenever they forget, they can look it up!
 
 
-### User stories: stakeholder (for whom?), functionality (what do the want?), benefit (why is it useful?)
-1. As a user, I want to check my password strength or to generate a password at a certain strength so that my password is accepted by the platform
-2. As a user, I want my password to be accepted by the platform quickly to reduce time spent creating a platform account
-3. As a user, I want to store my passwords, so that I don't have to remember them
-5. As a user, I want the generated password to be unique, so that if one platform password is hacked somehow my other platform accounts are safe
+### User stories: stakeholder (for whom?), functionality (what do they want?), benefit (why is it useful?)
+
+	1. As a user, I want to create a strong password by using the password generator in order to have a strong and safe password without dpending too much timme coming up with it on my own.
+	2. As a user, I want to be able to read my passwords and store them in one file so that I don't have to remember them at all times. 
+	3. As a user, I want to update my passwords so that they stay secure and I minimize the risks of hacking. 
+	4. As a user, I want to be able to delete my passwords when I no longer need them.
 
 
-### Use cases:
+### Use cases: 
 - User Login (gain access to the EasyPass user specific file)
 - Generate or check validity of a new password before storage
 - Store password/s from platform accounts in (user_name.txt)
@@ -67,8 +68,8 @@ The application interacts with the user via the console. Users can perform the f
 	1. Define password requirements 
 
 4. Manage User Specific account passwords
-	1. Save a password for a platform account 
-	2. View passwords for different platform accounts 
+	1. Create a password for a platform account 
+	2. Read passwords for different platform accounts
 	3. Update passwords for platform accounts 
 	4. Delete a platform account password entry 
 
