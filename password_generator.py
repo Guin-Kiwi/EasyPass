@@ -1,1 +1,1 @@
-
+password generate
