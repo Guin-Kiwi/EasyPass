@@ -1,29 +1,34 @@
 import string
 
 def strength_checker(password):
+    has_lower = False
+    has_upper = False
+    has_special = False
+    long_enough = len(password) >= 8
 
-    score = 0  # counts how many requirements are met
+    for ch in password:
+        if ch.islower():
+            has_lower = True
+        elif ch.isupper():
+            has_upper = True
+        elif ch in string.punctuation:
+            has_special = True
 
-    # Check for lowercase letter
-    if any(c.islower() for c in password):
+    # Count how many requirements are met
+    score = 0
+    if has_lower:
+        score += 1
+    if has_upper:
+        score += 1
+    if has_special:
+        score += 1
+    if long_enough:
         score += 1
 
-    # Check for uppercase letter
-    if any(c.isupper() for c in password):
-        score += 1
-
-    # Check for special character
-    if any(c in string.punctuation for c in password):
-        score += 1
-
-    # Check for length
-    if len(password) >= 8:
-        score += 1
-
-    # Evaluate strength
+    # Decide strength
     if score == 1:
         return "Weak password"
-    elif score in [2, 3]:
+    elif score in (2, 3):
         return "Medium password"
     elif score == 4:
         return "Strong password"
@@ -31,6 +36,6 @@ def strength_checker(password):
         return "Very weak password"
 
 
-# Example usage:
-user_password = input("Enter your password: ")
-print(strength_checker(user_password))
+# Example use
+pw = input("Enter your password: ")
+print(strength_checker(pw))
