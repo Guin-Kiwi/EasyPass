@@ -1,6 +1,12 @@
 import string
 
-def strength_checker(password):
+def strength_checker(password:str):
+    if len(password) < 4:
+        return "The password should be at least 4 charakters long"
+    
+    if " " in password:
+        return "Your password must not contain spaces"
+
     has_lower = False
     has_upper = False
     has_special = False
