@@ -9,5 +9,9 @@ def password_generator(length):
     for i in range(length):
         password += random.choice(characters)
 
+    return password
+
+
+
 length = int(input("Enter password length: "))
 print("Generated password:", password_generator(length))
