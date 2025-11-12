@@ -46,7 +46,8 @@ def main():
             break
         else:
             print("Choose 1, 2 or Q.")
-      
+            
+#this was just so I could check if the login was working, it can be overwritten of course
 def load_json(path: str = "users.json"):
     with open(path, "r") as accounts:
         return json.load(accounts)     
