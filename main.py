@@ -2,8 +2,8 @@ def main():
     accounts = load_json()
     print("EasyPass")
     while True:
-        opt = input("\n1) Login\n2) Create user\nQ) Quit\n> ").strip().upper()
-        if opt == "1":
+        menu = input("\n1) Login\n2) Create user\nQ) Quit\n> ").strip().upper()
+        if menu == "1":
             user = login(users)
             if user is None:
                 continue
