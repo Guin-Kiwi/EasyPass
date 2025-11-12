@@ -3,7 +3,7 @@ import json
 import random
 import string
 from typing import Dict, Tuple, Optional
-
+#probably doesnt work properly with the new json
 
 def load_users(path: str = "users.json") -> Dict:
     if not os.path.exists(path):
@@ -159,7 +159,7 @@ if __name__ == "__main__":
                                 save_users(users)
                                 print("Saved.")
                 elif cmd == "3":
-                    _ = [print(" -", s, n) for s, n in users.get(user, {}) if s != "EasyPass_pw"]
+                    _ = [print(" -", s) for s in users.get(user, {}) if s != "EasyPass_pw"] #atm this doesnt show the passwords to us only the 
                 elif cmd == "4":
                     manage_service(users, user)
                 elif cmd == "5":
