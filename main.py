@@ -3,6 +3,7 @@ import json
 import random
 import string
 from typing import Dict, Tuple, Optional
+import pathlib
 
 def main():
     accounts = load_json()
