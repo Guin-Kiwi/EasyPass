@@ -21,7 +21,8 @@ def main():
                             "\n2) Save"
                             "\n3) update"
                             "\n4) read"
-                            "\n5) delete")
+                            "\n5) delete"
+                            "\n: ")
                 if choice == "1":
                     pass #generate()
                     pass #check()
@@ -40,7 +41,7 @@ def main():
                 else:
                     print("Choose valid menuion.")
         elif menu == "2":
-            new_account()
+            new_account(accounts)
         elif menu == "Q":
             print("Goodbye.")
             break
@@ -53,25 +54,22 @@ def load_json(path: str = "users.json"):
         return json.load(accounts)     
 
 def login(accounts: Dict):
-    nickname = input("Enter your Nickname: ").strip().lower()
-    if not nickname:
-        print("Please enter a Nickname")
-        return None
-    account = accounts.get(nickname)
-    if not isinstance(account, Dict):
-        print("User not found.  Please create a new EasyPass Nickname.")
-        return None
-    elif isinstance(account, Dict):
+    while True:
+        nickname = input("Enter your Nickname: ").strip().lower()
+        if not nickname:
+            print("Please enter a Nickname")
+            continue
+        account = accounts.get(nickname)
+        if not isinstance(account, Dict):
+            print("User not found.  Please create a new EasyPass Nickname.")
+            return None
         user = nickname
-        print("Login Success.")
+        print("login success")
         return user
-    else:
-        print("An error has occurred, please try again")
-        return None
     
 def new_account(accounts: Dict):
     while True:
-        nickname = input("Enter your Nickname: ").strip().lower()
+        nickname = input("Create your Nickname: ").strip().lower()
         if not nickname:
             print("Please enter a Nickname")
             continue
@@ -80,11 +78,13 @@ def new_account(accounts: Dict):
             continue
         # create an empty dict for services
         if nickname not in accounts:
-            accounts[nickname] = {{"Google": {"user_id": "password"},
+            accounts[nickname] = {
+            "Google": {"user_id": "password"},
             "Twitter": {"user_id": "password"},
             "Reddit": {"user_id": "password"},
             "Github": {"user_id": "password"},
-            "Meta": {"user_id": "password"}}}
+            "Meta": {"user_id": "password"},
+            }
             # account_save(accounts)  Needs to be added.
             print(f"Created account '{nickname}'.")
             return nickname
