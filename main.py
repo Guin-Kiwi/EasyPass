@@ -9,8 +9,8 @@ def main():
     accounts = load_json()
     print("EasyPass")
     while True:
-        menu = input("\n1) Login\"
-                "n2) Create user"
+        menu = input("\n1) Login"
+                "\n2) Create user"
                 "\nQ) Quit\n> ").strip().upper()
         if menu == "1":
             user = login(accounts)
