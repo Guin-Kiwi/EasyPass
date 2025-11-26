@@ -1,96 +1,44 @@
-import os
-import json
-import random
-import string
-from typing import Dict, Tuple, Optional
-import pathlib
+def main():                           # Defines the main function, the core entry point of the program.
+    accounts = load_accounts()        # Loads account data from the JSON file into a dictionary.
+    print("EasyPass")                 # Prints the name of the program.
 
-def main():
-    accounts = load_json()
-    print("EasyPass")
-    while True:
-        menu = input("\n1) Login"
-                "\n2) Create user"
-                "\nQ) Quit\n> ").strip().upper()
-        if menu == "1":
-            user = login(accounts)
-            if user is None:
-                continue
-            while user is not None and user in accounts:
-                choice = input("\n1) Generate and check"
-                            "\n2) Save"
-                            "\n3) update"
-                            "\n4) read"
-                            "\n5) delete"
-                            "\n: ")
-                if choice == "1":
-                    pass #generate()
-                    pass #check()
-                elif choice == "2":
-                    pass #account_save()
-                elif choice == "3":
-                    pass #account_update()
-                elif choice == "4":
-                    pass #account_read()
-                elif choice == "5":
-                    pass #account_delete()
-                elif choice == "L":
-                    print("Logged out.")
-                    user = None
-                    break
-                else:
-                    print("Choose valid menuion.")
-        elif menu == "2":
-            new_account(accounts)
-        elif menu == "Q":
-            print("Goodbye.")
-            break
-        else:
-            print("Choose 1, 2 or Q.")
-            
-#this was just so I could check if the login was working, it can be overwritten of course
-def load_json(path: str = "users.json"):
-    with open(path, "r") as accounts:
-        return json.load(accounts)     
+    while True:                       # Infinite loop for the main menu until user quits.
+        menu = input(
+            "\n1) Login"
+            "\n2) Create user"
+            "\nQ) Quit\n> "
+        ).strip().upper()             # Shows main options and gets user's choice.
 
-def login(accounts: Dict):
-    while True:
-        nickname = input("Enter your Nickname: ").strip().lower()
-        if not nickname:
-            print("Please enter a Nickname")
-            continue
-        account = accounts.get(nickname)
-        if not isinstance(account, Dict):
-            print("User not found.  Please create a new EasyPass Nickname.")
-            return None
-        user = nickname
-        print("login success")
-        return user
-    
-def new_account(accounts: Dict):
-    while True:
-        nickname = input("Create your Nickname: ").strip().lower()
-        if not nickname:
-            print("Please enter a Nickname")
-            continue
-        if nickname in accounts:
-            print("That username already exists. Try another")
-            continue
-        # create an empty dict for services
-        if nickname not in accounts:
-            accounts[nickname] = {
-            "Google": {"user_id": "password"},
-            "Twitter": {"user_id": "password"},
-            "Reddit": {"user_id": "password"},
-            "Github": {"user_id": "password"},
-            "Meta": {"user_id": "password"},
-            }
-            # account_save(accounts)  Needs to be added.
-            print(f"Created account '{nickname}'.")
-            return nickname
-        else:
-            print("Something went wrong")
-            break
+        if menu == "1":               # If user chooses Login:
+            user = login(accounts)    # Calls login() and stores the result in user.
+            if not user:             # If login() returned None or empty (failed login):
+                continue              # Skip rest of loop and show main menu again.
 
-if __name__ == "__main__":
-    main()
+            # Logged-in menu          # Comment explaining that next part is the logged-in submenu.
+            while user in accounts:   # Loop while that user still exists in accounts (i.e. logged in).
+                choice = input(
+                    "\n1) Manage accounts"
+                    "\nL) Logout\n> "
+                ).strip().upper()     # Shows logged-in options, gets choice.
+
+                if choice == "1":     # If user selects "Manage accounts":
+                    manage_accounts(accounts, user)  # Open the services submenu.
+                elif choice == "L":   # If user chooses Logout:
+                    print("Logged out.")  # Confirm logout.
+                    break             # Exit the logged-in loop, go back to main menu.
+                else:                 # If invalid option:
+                    print("Choose a valid option.")  # Error message.
+
+        elif menu == "2":             # If user chooses to create a new user:
+            create_user(accounts)     # Calls the create_user() function.
+
+        elif menu == "Q":             # If user chooses to quit:
+            print("Goodbye.")         # Prints goodbye message.
+            break                     # Breaks the main loop, ending the program.
+
+        else:                         # If user input doesn't match 1, 2, or Q:
+            print("Choose 1, 2 or Q.")# Tells user to pick a valid option.
+
+
+if __name__ == "__main__":           # Checks if this file is being run directly (not imported as a module).
+    main()                            # If so, calls the main() function to start the program.
