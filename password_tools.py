@@ -1,3 +1,7 @@
+import string    # Imports the string module to access pre-defined character sets.
+import random    # Imports the random module to generate random values.     
+
+
 def password_generator(length):       # Defines a function that generates a random password of a given length.
     chars = string.ascii_letters + string.digits + string.punctuation  
     # chars: all lowercase and uppercase letters, digits, and punctuation characters.
