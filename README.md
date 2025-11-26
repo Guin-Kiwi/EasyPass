@@ -80,21 +80,112 @@ The application validates all user input to ensure data integrity and a smooth u
 
 ### Account Check
 
-When the user enters a login name, the program checks for a .txt file with their username. If the account doesn't exist yet, the program will offer to generate a new password.
+When the user enters a login name, the program checks within the users.json for their username as the a key. If the account doesn't exist yet, the user is prompted to create a user and is returned to the previous menu.
 
-	`space for code`
+	`def login(accounts):
+    while True:
+        nickname = input("Enter your nickname: ").strip().lower()
+        if not nickname:
+            print("Please enter a nickname.")
+            continue
 
-### Password validation:
-The program checks if the entered password corresponds to the requirements and if its not, an error occurs and the input is requested again.
+        if nickname not in accounts:
+            print("User not found. Please create a new EasyPass nickname.")
+            return None
+
+        print("Login success.")
+        return nickname`
+### Create a User
+
+	´def create_user(accounts):
+    while True:
+        nickname = input("Create your nickname: ").strip().lower()
+        if not nickname:
+            print("Please enter a nickname.")
+            continue
+
+        if nickname in accounts:
+            print("That nickname already exists. Try another.")
+            continue
+
+        accounts[nickname] = {}   # services will go here later
+        save_accounts(accounts)
+        print(f"Created account '{nickname}'.")
+        return nickname´
+
+### User Data Management
+
+	´def manage_accounts(accounts, user):
+    """Main submenu for managing services of the logged-in user."""
+    while True:
+        show_services(accounts, user)
+        choice = input(
+            "\nA) Add / Save service"
+            "\nR) Read all details"
+            "\nU) Update a service"
+            "\nD) Delete a service"
+            "\nB) Back\n> "
+        ).strip().upper()
+
+        if choice == "A":
+            account_add_or_save(accounts, user)
+        elif choice == "R":
+            account_read(accounts, user)
+        elif choice == "U":
+            account_update(accounts, user)
+        elif choice == "D":
+            account_delete(accounts, user)
+        elif choice == "B":
+            break
+        else:
+            print("Choose a valid option.")´
+
+### Password creation: manual or generated
+
+Need to write how it works.
+
+	´def choose_password():
+    """Loop until user accepts a password (generated or own)."""
+    while True:
+        choice = input("Do you want a generated password? (Y/N): ").strip().upper()
+
+        if choice == "Y":
+            try:
+                length = int(input("Enter password length: "))
+                if length <= 0:
+                    print("Length must be positive.")
+                    continue
+            except ValueError:
+                print("Please enter a valid number.")
+                continue
+
+            password = password_generator(length)
+            print("Generated password:", password)
+        else:
+            password = input("Enter your password: ")
+
+        strength = strength_checker(password)
+        print("Password strength:", strength)
+
+        keep = input("Do you want to keep this password? (Y/N): ").strip().upper()
+        if keep == "Y":
+            return password
+
+        print("Okay, let's try again.\n")´
+
+### Password generation
+
+The program asks the user the character length of the password to be generated.  A random string is generated and returned to the password creation function.
+
+	`def password_generator(length):
+    chars = string.ascii_letters + string.digits + string.punctuation
+    return "".join(random.choice(chars) for _ in range(length))`
+
+
+### Password validation and strength assessment: 
+
+The program checks if the entered password corresponds to the requirements and if it doesn't, an error occurs and the input is requested again.
 The password must meet all the requirements in order to be valid as a password
-1. minimum 4 characters
-2. contain no spaces
-
-
-	`space for code`
-
-
-### Password strength requirements: 
 
 Depending on how many of the requirements the password is fulfilling, we deem it weak, medium or strong.
   
@@ -113,25 +204,50 @@ If 2 or 3 are met -> medium password
 If all 4 are met -> strong password
 
 
-	`space for code`
+	`def strength_checker(password):
+    if len(password) < 4:
+        return "The password should be at least 4 characters long"
+    if " " in password:
+        return "Your password must not contain spaces"
+		
+	has_lower = any(c.islower() for c in password)
+    has_upper = any(c.isupper() for c in password)
+    has_special = any(c in string.punctuation for c in password)
+    long_enough = len(password) >= 8
 	
+	score = sum([has_lower, has_upper, has_special, long_enough])
 
-
-	
-
+    if score == 4:
+        return "Strong password"
+    elif score in (2, 3):
+        return "Medium password"
+    elif score == 1:
+        return "Weak password"
+    else:
+        return "Very weak password"`
 
 
 ### 3. File Processing
 
-The application writes and reads data using files:
+The application writes and reads data using a json file with a nested dictionary structure :
 
-- **Input and Output file:** `user_name.txt` — Contains the accounts and associated passwords for the user
-		```
-	- Google;strong;g7!R#x9VqP4sL@m2bZk8
-  	- Reddit;medium;Blue-Planet-78
-  	- Cara;weak;summer2024
-		
-		- The output file serves as a record for the user.
+- **Input and Output file:** `users.json` — Contains the accounts and associated passwords for the users
+
+	`def create_user(accounts):
+    while True:
+        nickname = input("Create your nickname: ").strip().lower()
+        if not nickname:
+            print("Please enter a nickname.")
+            continue
+
+        if nickname in accounts:
+            print("That nickname already exists. Try another.")
+            continue
+
+        accounts[nickname] = {}   # services will go here later
+        save_accounts(accounts)
+        print(f"Created account '{nickname}'.")
+        return nickname`
   
 ## ⚙️ Implementation
 
@@ -144,7 +260,7 @@ The application writes and reads data using files:
 ```text
 PizzaRP/
 ├── main.py             # main program logic (console application)
-├── user_name.txt       # User password management info (input and output data file)
+├── users.json       # Users password management info (input and output data file)
 ├── docs/               # optional screenshots or project documentation
 └── README.md           # project description and milestones
 ```
@@ -178,7 +294,7 @@ These libraries are part of the Python standard library, so no external installa
 
 ## 🤝 Contributing
 
-- Use this repository as a starting point by importing it into your own GitHub account.  
+- Use this repository as a starting point by importing it into your own GitHub account or VScode on Desktop.  
 - Work only within your own copy — do not push to the original template.  
 - Commit regularly to track your progress.
 
