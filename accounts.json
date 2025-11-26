@@ -1,23 +1,5 @@
 {
-  "ayla": {
-    "Google": {"user_id": "password"},
-    "Twitter": {"user_id": "password"},
-    "Reddit": {"user_id": "password"},
-    "Github": {"user_id": "password"},
-    "Meta": {"user_id": "password"}
-  },
-  "polina": {
-    "Google": {"user_id": "password"},
-    "Twitter": {"user_id": "password"},
-    "Reddit": {"user_id": "password"},
-    "Github": {"user_id": "password"},
-    "Meta": {"user_id": "password"}
-  },
-  "marta": {
-    "Google": {"user_id": "password"},
-    "Twitter": {"user_id": "password"},
-    "Reddit": {"user_id": "password"},
-    "Github": {"user_id": "password"},
-    "Meta": {"user_id": "password"}
-  }
+  "marta": {},
+  "polina": {},
+  "ayla": {}
 }
