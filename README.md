@@ -233,8 +233,8 @@ The application writes and reads data using a json file with a nested dictionary
 
 - **Input and Output file:** `users.json` — Contains the accounts and associated passwords for the users
 
-	`def create_user(accounts):
-    while True:
+		`def create_user(accounts):
+    		while True:
         nickname = input("Create your nickname: ").strip().lower()
         if not nickname:
             print("Please enter a nickname.")
