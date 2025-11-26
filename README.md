@@ -276,8 +276,9 @@ PizzaRP/
 
 ### Libraries Used
 
-- `os`: Used for file and path operations, such as checking if the menu file exists and creating new files.
-- `glob`: Used to find all invoice files matching a pattern (e.g., `user_name.txt`) to determine the next invoice number.
+- `json`: Used for file operations, such as checking if the menu file exists and creating new files.
+- `random`: Used to randomize the characters in the password generation function
+- `string`: Used to generate the charactersin the password generation function and check if there are any punctuation characters used in the strength checking part
 
 These libraries are part of the Python standard library, so no external installation is required. They were chosen for their simplicity and effectiveness in handling file management tasks in a console application.
 
