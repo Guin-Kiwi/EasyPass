@@ -142,7 +142,11 @@ When the user enters a login name, the program checks within the users.json for 
 
 ### Password creation: manual or generated
 
-Need to write how it works.
+The application prompts the user if they want a **generated password** or if they prefer to **enter their own**.
+
+1.  **Generated Password:** If chosen, the user must enter a **positive integer for the length**. The program handles `ValueError` for non-numeric input and checks for a length greater than zero. The password is then generated and its strength is checked.
+2.  **Manual Password:** If chosen, the user directly enters the password, and its strength is immediately checked against the defined criteria.
+3.  **Acceptance Loop:** The user is shown the password and its strength and must confirm whether to **keep** it. If they choose not to keep it, the loop restarts.
 
 	´def choose_password():
     """Loop until user accepts a password (generated or own)."""
@@ -286,11 +290,11 @@ These libraries are part of the Python standard library, so no external installa
 ## 👥 Team & Contributions
 
 
-| Name                  | Contribution                                 |
+| Name                  | Final Contribution                                 |
 |-----------------------|----------------------------------------------|
-| Marta Greschuk        |                                              |
-| Polina Yemelianenkova |                                              |
-| Ayla Allen            |                                              |
+| Marta Greschuk        | File I/O (load/save), Account Management (Add, Read, Update, Delete) |
+| Polina Yemelianenkova | Password Generator, Strength Checker |
+| Ayla Allen            | Login/Create User functions, Main loop logic |
 
 
 ## 🤝 Contributing
