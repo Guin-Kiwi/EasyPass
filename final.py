@@ -217,7 +217,7 @@ def manage_accounts(accounts, user):
         show_services(accounts, user)
         choice = input(
             "\nC) Create new account."
-            "\nR) Read / dispplay accounts."
+            "\nR) Read (display) accounts."
             "\nU) Update account."
             "\nD) Delete account."
             "\nB) Back\n> "
