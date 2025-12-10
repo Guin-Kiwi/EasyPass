@@ -53,22 +53,21 @@ Each app must meet the following three criteria in order to be accepted (see als
 ---
 The application interacts with the user via the console. Users can perform the following steps:
 
-1. User Login
-   1. with each username a file is created with the purpose of saving passwords 
-   2. it can be either saved or deleted by the user 
+1. User Login:
+   1. The user can login with a nickname or create a new one and the program will save it in users.json.
+   2. The program tells them if the nickname is not in the file.
 
-2. Check a password
+2. Check a password:
 	1. Judge password strength 
    
-
-3. Generate a password
+3. Generate a password:
 	1. Define password requirements 
 
-4. Manage User Specific account passwords
-	1. Create a password for a platform account 
-	2. Read passwords for different platform accounts
-	3. Update passwords for platform accounts 
-	4. Delete a platform account password entry 
+4. Manage accounts:
+	1. Create a username and password for specific platforms. 
+	2. Read (display) passwords for different platform accounts.
+	3. Update passwords for platform accounts.
+	4. Delete a platform account. 
 
 ---
 
@@ -79,7 +78,7 @@ The application validates all user input to ensure data integrity and a smooth u
 
 ### Account Check
 
-When the user enters a login name, the program checks within the users.json for their username as the a key. If the account doesn't exist yet, the user is prompted to create a user and is returned to the previous menu.
+When the user enters a login name, the program checks within the users.json for their nickname as the a key. If the account doesn't exist yet, the user is prompted to create a user and is returned to the previous menu.
 
 	`def login(accounts):
     while True:
