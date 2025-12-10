@@ -24,18 +24,17 @@ output - file
 
 ### User stories: stakeholder (for whom?), functionality (what do they want?), benefit (why is it useful?)
 
-	1. As a user, I want to create a strong password by using the password generator in order to have a strong and safe password without dpending too much timme coming up with it on my own.
+	1. As a user, I want to create a strong password by using the password generator in order to have a strong and safe password without depending too much timme coming up with it on my own.
 	2. As a user, I want to be able to read my passwords and store them in one file so that I don't have to remember them at all times. 
 	3. As a user, I want to update my passwords so that they stay secure and I minimize the risks of hacking. 
 	4. As a user, I want to be able to delete my passwords when I no longer need them.
-	5. As a user, I want my password secret so that no body else can access it. -> libraries
 
 ### Use cases: 
 - Enter Login (gain access to the EasyPass user specific file)
 - Generate or check validity of a new password before storage
-- Save password/s from platform accounts in (user_name.txt)
-- Remove password/s from platform accounts in (user_name.txt)
-- Show passwords from platform accounts in (user_name.txt)
+- Save password/s from platform accounts in (users.json)
+- Remove password/s from platform accounts in (users.json)
+- Display passwords from platform accounts in (users.json)
 
 ---
 
