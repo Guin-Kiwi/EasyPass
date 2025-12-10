@@ -51,7 +51,7 @@ def create_user(accounts):
             print("That nickname already exists. Try another.")
             continue
 
-        accounts[nickname] = {}   # services will go here later
+        accounts[nickname] = {} 
         save_accounts(accounts)
         print(f"Created account '{nickname}'.")
         return nickname
