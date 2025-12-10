@@ -129,7 +129,7 @@ def show_services(accounts, user):
             print(" -", name)
 
 
-def account_add_or_save(accounts, user):
+def account_create(accounts, user):
     service = input("Service name (e.g. Google, Twitter): ").strip()
     if not service:
         print("Service name cannot be empty.")
@@ -216,15 +216,15 @@ def manage_accounts(accounts, user):
     while True:
         show_services(accounts, user)
         choice = input(
-            "\nA) Add / Save service"
-            "\nR) Read all details"
-            "\nU) Update a service"
-            "\nD) Delete a service"
+            "\nC) Create new account."
+            "\nR) Read / dispplay accounts."
+            "\nU) Update account."
+            "\nD) Delete account."
             "\nB) Back\n> "
         ).strip().upper()
 
-        if choice == "A":
-            account_add_or_save(accounts, user)
+        if choice == "C":
+            account_create(accounts, user)
         elif choice == "R":
             account_read(accounts, user)
         elif choice == "U":
