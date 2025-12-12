@@ -51,7 +51,7 @@ def create_user(accounts):
             print("That nickname already exists. Try another.")
             continue
 
-        accounts[nickname] = {} 
+        accounts[nickname] = {}   # services will go here later
         save_accounts(accounts)
         print(f"Created account '{nickname}'.")
         return nickname
@@ -90,7 +90,8 @@ def strength_checker(password):
 def choose_password():
     """Loop until user accepts a password (generated or own)."""
     while True:
-        choice = input("Do you want a generated password? (Y/N): ").strip().upper()
+        choice = input(
+            "Do you want a generated password? (Y/N): ").strip().upper()
 
         if choice == "Y":
             try:
@@ -110,7 +111,8 @@ def choose_password():
         strength = strength_checker(password)
         print("Password strength:", strength)
 
-        keep = input("Do you want to keep this password? (Y/N): ").strip().upper()
+        keep = input(
+            "Do you want to keep this password? (Y/N): ").strip().upper()
         if keep == "Y":
             return password
 
@@ -129,7 +131,7 @@ def show_services(accounts, user):
             print(" -", name)
 
 
-def account_create(accounts, user):
+def account_add_or_save(accounts, user):
     service = input("Service name (e.g. Google, Twitter): ").strip()
     if not service:
         print("Service name cannot be empty.")
@@ -216,15 +218,15 @@ def manage_accounts(accounts, user):
     while True:
         show_services(accounts, user)
         choice = input(
-            "\nC) Create new account."
-            "\nR) Read (display) accounts."
-            "\nU) Update account."
-            "\nD) Delete account."
+            "\nA) Add / Save service"
+            "\nR) Read all details"
+            "\nU) Update a service"
+            "\nD) Delete a service"
             "\nB) Back\n> "
         ).strip().upper()
 
-        if choice == "C":
-            account_create(accounts, user)
+        if choice == "A":
+            account_add_or_save(accounts, user)
         elif choice == "R":
             account_read(accounts, user)
         elif choice == "U":
@@ -283,4 +285,3 @@ def main():
 
 if __name__ == "__main__":
     main()
- 
