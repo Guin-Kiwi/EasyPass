@@ -95,7 +95,7 @@ When the user enters a login name, the program checks within the users.json for 
         return nickname`
 ### Create a User
 
-	´def create_user(accounts):
+	`def create_user(accounts):
     while True:
         nickname = input("Create your nickname: ").strip().lower()
         if not nickname:
@@ -109,11 +109,11 @@ When the user enters a login name, the program checks within the users.json for 
         accounts[nickname] = {}   # services will go here later
         save_accounts(accounts)
         print(f"Created account '{nickname}'.")
-        return nickname´
+        return nickname`
 
 ### User Data Management
 
-	´def manage_accounts(accounts, user):
+	`def manage_accounts(accounts, user):
     """Main submenu for managing services of the logged-in user."""
     while True:
         show_services(accounts, user)
@@ -136,7 +136,7 @@ When the user enters a login name, the program checks within the users.json for 
         elif choice == "B":
             break
         else:
-            print("Choose a valid option.")´
+            print("Choose a valid option.")`
 
 ### Password creation: manual or generated
 
@@ -146,10 +146,11 @@ The application prompts the user if they want a **generated password** or if the
 2.  **Manual Password:** If chosen, the user directly enters the password, and its strength is immediately checked against the defined criteria.
 3.  **Acceptance Loop:** The user is shown the password and its strength and must confirm whether to **keep** it. If they choose not to keep it, the loop restarts.
 
-	´def choose_password():
+	`def choose_password():
     """Loop until user accepts a password (generated or own)."""
     while True:
-        choice = input("Do you want a generated password? (Y/N): ").strip().upper()
+        choice = input(
+    		"Do you want a generated password? (Y/N): ").strip().upper()
 
         if choice == "Y":
             try:
@@ -169,11 +170,12 @@ The application prompts the user if they want a **generated password** or if the
         strength = strength_checker(password)
         print("Password strength:", strength)
 
-        keep = input("Do you want to keep this password? (Y/N): ").strip().upper()
+        keep = input(
+    		"Do you want to keep this password? (Y/N): ").strip().upper()
         if keep == "Y":
             return password
 
-        print("Okay, let's try again.\n")´
+        print("Okay, let's try again.\n")`
 
 ### Password generation
 
@@ -260,7 +262,7 @@ The application writes and reads data using a json file with a nested dictionary
 
 ### 📂 Repository Structure
 ```text
-PizzaRP/
+EasyPass/
 ├── main.py             # main program logic (console application)
 ├── users.json       # Users password management info (input and output data file)
 ├── docs/               # optional screenshots or project documentation
