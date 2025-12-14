@@ -142,9 +142,9 @@ When the user enters a login name, the program checks within the users.json for 
 
 The application prompts the user if they want a **generated password** or if they prefer to **enter their own**.
 
-1.  **Generated Password:** If chosen, the user must enter a **positive integer for the length**. The program handles `ValueError` for non-numeric input and checks for a length greater than zero. The password is then generated and its strength is checked.
-2.  **Manual Password:** If chosen, the user directly enters the password, and its strength is immediately checked against the defined criteria.
-3.  **Acceptance Loop:** The user is shown the password and its strength and must confirm whether to **keep** it. If they choose not to keep it, the loop restarts.
+	1.  **Generated Password:** If chosen, the user must enter a **positive integer for the length**. The program handles `ValueError` for non-numeric input and checks for a length greater than zero. The password is then generated and its strength is checked.
+	2.  **Manual Password:** If chosen, the user directly enters the password, and its strength is immediately checked against the defined criteria.
+	3.  **Acceptance Loop:** The user is shown the password and its strength and must confirm whether to **keep** it. If they choose not to keep it, the loop restarts.
 
 
 	`def choose_password():
