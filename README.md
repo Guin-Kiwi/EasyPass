@@ -150,14 +150,15 @@ The application prompts the user if they want a **generated password** or if the
     """Loop until user accepts a password (generated or own)."""
     while True:
         choice = input(
-    		"Do you want a generated password? (Y/N): ").strip().upper()
+            "Do you want a generated password? (Y/N): ").strip().upper()
 
         if choice == "Y":
             try:
                 length = int(input("Enter password length: "))
-                if length <= 0:
-                    print("Length must be positive.")
-                    continue
+                if 4 <= length <= 50: 
+                    break
+                else:
+                    print("Length must be between 4 and 50.")
             except ValueError:
                 print("Please enter a valid number.")
                 continue
@@ -171,7 +172,7 @@ The application prompts the user if they want a **generated password** or if the
         print("Password strength:", strength)
 
         keep = input(
-    		"Do you want to keep this password? (Y/N): ").strip().upper()
+            "Do you want to keep this password? (Y/N): ").strip().upper()
         if keep == "Y":
             return password
 
