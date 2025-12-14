@@ -96,9 +96,10 @@ def choose_password():
         if choice == "Y":
             try:
                 length = int(input("Enter password length: "))
-                if length <= 0:
-                    print("Length must be positive.")
-                    continue
+                if 4 <= length <= 50: 
+                    break
+                else:
+                    print("Length must be between 4 and 50.")
             except ValueError:
                 print("Please enter a valid number.")
                 continue
