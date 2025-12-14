@@ -147,6 +147,8 @@ The application prompts the user if they want a **generated password** or if the
 	3.  **Acceptance Loop:** The user is shown the password and its strength and must confirm whether to **keep** it. If they choose not to keep it, the loop restarts.
 
 
+
+
 	`def choose_password():
     """Loop until user accepts a password (generated or own)."""
     while True:
