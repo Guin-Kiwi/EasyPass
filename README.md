@@ -1,5 +1,9 @@
 # EasyPass - Password Generator and Checker Reference Project (Console)
 
+> [!IMPORTANT]
+> **Archived repository:** This semester project is no longer actively maintained.
+> The repository is preserved for reference and portfolio purposes.
+
 This project is intended to:
 
 - Practice the complete process from **problem analysis to implementation**
@@ -301,12 +305,34 @@ These libraries are part of the Python standard library, so no external installa
 | Polina Yemelianenkova | Password Generator, Strength Checker |
 | Ayla Allen            | Login/Create User functions, Main loop logic |
 
+## 🎓 Final Outcome (Semester Assessment)
+
+This project was assessed in the Programming Foundations project exam and received:
+
+- **Final points:** `74 / 100`
+- **Final grade:** `5.2`
+- **Project category:** Password generator and checker
+
+### Rubric overview
+
+| Category | Weight | Raw score | Weighted points | Summary |
+|---|---:|---:|---:|---|
+| Functionality | 30% | 70 | 21.0 | Core features were complete and working as expected (user creation, service credential CRUD, password generation/manual entry, password update and deletion). |
+| Application of Python Foundations | 30% | 75 | 22.5 | Correct use of basic types and nested dictionaries, clear control flow, modular functions, and generally solid naming/PEP 8 style. |
+| Presentation | 20% | 70 | 14.0 | Overall understandable project presentation, with improvement points around slide density, flow clarity, and parts of Q&A delivery. |
+| Documentation | 10% | 75 | 7.5 | Relevant documentation content was included, with suggestions to add more scenario detail and a clearer function overview. |
+| Project Management & Engagement | 10% | 90 | 9.0 | Strong consistency in participation, commitment to project goals, and steady progress during coaching. |
+
+### Consolidated assessment
+
+The exam feedback described the implementation as functionally complete with a clear modular structure and good use of Python fundamentals. Suggested improvements mainly focused on communication/presentation clarity and a few documentation refinements.
+
 
 ## 🤝 Contributing
 
-- Use this repository as a starting point by importing it into your own GitHub account or VScode on Desktop.  
-- Work only within your own copy — do not push to the original template.  
-- Commit regularly to track your progress.
+- This repository is archived and kept as a historical semester-project snapshot.
+- New feature development is not planned.
+- Forking for personal learning is welcome, but this repository should be treated as read-only.
 
 ## 📝 License
 
